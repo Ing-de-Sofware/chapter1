@@ -608,15 +608,15 @@ Desarrollar un roadmap estratégico de seguridad para TAVOLO que incluya clasifi
 
 #### 1.2 CONSULTORA DE SEGURIDAD (Proveedor del Servicio)
 
-| Campo | Información |
-|-------|-------------|
-| **Nombre de la Consultora** | CyberChain Cybersecurity Consulting |
+| Campo | Información                                                        |
+|-------|--------------------------------------------------------------------|
+| **Nombre de la Consultora** | PentGuin Cybersecurity Consulting                                  |
 | **Tipo de Entidad** | Equipo académico - Universidad Peruana de Ciencias Aplicadas (UPC) |
-| **Curso** | 1ASI0665 - Anti-Hacking y Nuevas Tendencias de Seguridad |
-| **Profesor Supervisor** | Vera Olivera, David Carlos |
-| **Representante del Equipo** | Pescoran Angulo, Juan Fabritzzio |
-| **Cargo Representante** | Scrum Master / Líder del Proyecto |
-| **Correo Institucional** | u20221c936@upc.edu.pe |
+| **Curso** | 1ASI0665 - Anti-Hacking y Nuevas Tendencias de Seguridad           |
+| **Profesor Supervisor** | Vera Olivera, David Carlos                                         |
+| **Representante del Equipo** | Pescoran Angulo, Juan Fabritzzio                                   |
+| **Cargo Representante** | Scrum Master / Líder del Proyecto                                  |
+| **Correo Institucional** | u20221c936@upc.edu.pe                                              |
 
 **Integrantes del Equipo de Pentesting:**
 
@@ -649,7 +649,7 @@ PTES (Penetration Testing Execution Standard), OWASP Testing Guide v4.2, OWASP T
 
 ### 3. ALCANCE AUTORIZADO (IN-SCOPE)
 
-La consultora CyberChain está expresamente autorizada a realizar pruebas de seguridad sobre los siguientes activos digitales de TAVOLO:
+La consultora PentGuin está expresamente autorizada a realizar pruebas de seguridad sobre los siguientes activos digitales de TAVOLO:
 
 #### 3.1 Aplicaciones Web
 
@@ -778,7 +778,7 @@ La consultora debe notificar con 24 horas de anticipación cuando planea ejecuta
 **Canales de Notificación:**
 
 Email: aldo.baldeon@tavolo.pe  
-Slack: Canal #pentesting-cyberchain  
+Slack: Canal #pentesting-PentGuin
 WhatsApp: Solo emergencias
 
 ### 7. RESPONSABILIDADES DE LAS PARTES
@@ -791,12 +791,12 @@ TAVOLO se compromete a:
 2. Designar a Aldo Alberto Baldeon Fabian (CTO) como contacto principal con disponibilidad en horario laboral (9 AM - 6 PM) y contacto de emergencia 24/7 para vulnerabilidades críticas
 3. Mantener ambientes staging/dev disponibles durante las 14 semanas del proyecto y notificar con 48 horas de anticipación cualquier mantenimiento planificado
 4. Participar en reuniones de seguimiento semanales (Viernes 4-5 PM), revisar y validar vulnerabilidades críticas en menos de 48 horas, y aprobar contenido del informe final antes de entrega formal
-5. No responsabilizar a CyberChain por caídas temporales de staging/dev durante pruebas autorizadas
-6. No divulgar hallazgos de seguridad públicamente sin consentimiento de CyberChain y permitir uso académico de resultados anonimizados en presentaciones UPC
+5. No responsabilizar a PentGuin por caídas temporales de staging/dev durante pruebas autorizadas
+6. No divulgar hallazgos de seguridad públicamente sin consentimiento de PentGuin y permitir uso académico de resultados anonimizados en presentaciones UPC
 
-#### 7.2 Responsabilidades de la CONSULTORA (CyberChain)
+#### 7.2 Responsabilidades de la CONSULTORA (PentGuin)
 
-CyberChain se compromete a:
+PentGuin se compromete a:
 
 1. Realizar pruebas únicamente en activos IN-SCOPE autorizados, no acceder a ambientes de producción bajo ninguna circunstancia, y cesar inmediatamente actividades ante sospecha de error de alcance
 2. Reportar vulnerabilidades críticas (CVSS mayor o igual a 9.0) en menos de 4 horas desde detección, vulnerabilidades altas (CVSS 7.0-8.9) en menos de 24 horas, y notificar inmediatamente cualquier incidente no previsto
@@ -810,7 +810,7 @@ CyberChain se compromete a:
 
 **Compromiso de Confidencialidad:**
 
-Toda información obtenida durante el pentesting es estrictamente confidencial. CyberChain se compromete a no divulgar información técnica, arquitectónica o de negocio de TAVOLO a terceros, no publicar vulnerabilidades en blogs, redes sociales o foros, no compartir código fuente, credenciales o datos sensibles obtenidos, y no discutir hallazgos públicamente.
+Toda información obtenida durante el pentesting es estrictamente confidencial. PentGuin se compromete a no divulgar información técnica, arquitectónica o de negocio de TAVOLO a terceros, no publicar vulnerabilidades en blogs, redes sociales o foros, no compartir código fuente, credenciales o datos sensibles obtenidos, y no discutir hallazgos públicamente.
 
 **Excepciones (requieren aprobación escrita de TAVOLO):**
 
@@ -826,7 +826,7 @@ Credenciales de prueba para uso temporal únicamente, captura de máximo 10 regi
 
 **Retención de Datos:**
 
-Durante el proyecto los datos se almacenan en repositorio privado cifrado de CyberChain. Post-entrega se conservan 90 días máximo para respaldo de evidencias. Después de 90 días se realiza eliminación permanente (borrado seguro). Cliente puede solicitar eliminación anticipada o certificado de destrucción de datos firmado por Scrum Master.
+Durante el proyecto los datos se almacenan en repositorio privado cifrado de PentGuin. Post-entrega se conservan 90 días máximo para respaldo de evidencias. Después de 90 días se realiza eliminación permanente (borrado seguro). Cliente puede solicitar eliminación anticipada o certificado de destrucción de datos firmado por Scrum Master.
 
 **Manejo de Evidencias:**
 
@@ -836,18 +836,18 @@ Todas las evidencias deben incluir metadatos obligatorios (archivo, autor, fecha
 
 **Canales Oficiales de Comunicación:**
 
-| Propósito | Canal | SLA de Respuesta |
-|-----------|-------|------------------|
-| **Coordinación General** | Email + Slack | Menos de 24 horas |
-| **Reuniones de Seguimiento** | Zoom/Google Meet | Viernes 4-5 PM (semanal) |
-| **Notificación de Críticos** | Email + WhatsApp | Menos de 4 horas |
-| **Dudas Técnicas** | Slack #pentesting-cyberchain | Menos de 8 horas (horario laboral) |
-| **Emergencias** | WhatsApp + Llamada | Inmediato |
+| Propósito | Canal                      | SLA de Respuesta |
+|-----------|----------------------------|------------------|
+| **Coordinación General** | Email + Slack              | Menos de 24 horas |
+| **Reuniones de Seguimiento** | Zoom/Google Meet           | Viernes 4-5 PM (semanal) |
+| **Notificación de Críticos** | Email + WhatsApp           | Menos de 4 horas |
+| **Dudas Técnicas** | Slack #pentesting-pentguin | Menos de 8 horas (horario laboral) |
+| **Emergencias** | WhatsApp + Llamada         | Inmediato |
 
 **Contactos Principales:**
 
 TAVOLO: CTO Aldo Alberto Baldeon Fabian (aldo.baldeon@tavolo.pe), Tech Lead Jimena Tamara Cama Salvatierra (jimena.cama@tavolo.pe)  
-CyberChain: Scrum Master Juan Fabritzzio Pescoran Angulo (u20221c936@upc.edu.pe), Product Owner Diego Ulises Soto Quispe (u202214477@upc.edu.pe)
+PentGuin: Scrum Master Juan Fabritzzio Pescoran Angulo (u20221c936@upc.edu.pe), Product Owner Diego Ulises Soto Quispe (u202214477@upc.edu.pe)
 
 **Procedimiento de Reporte de Vulnerabilidades:**
 
@@ -869,7 +869,7 @@ Paso 5: Realizar reunión de análisis de incidente (48 horas post-resolución),
 
 ### 10. ENTREGABLES DEL PROYECTO
 
-Al finalizar el proyecto (30 de Noviembre de 2024), CyberChain entregará:
+Al finalizar el proyecto (30 de Noviembre de 2024), PentGuin entregará:
 
 **Documentación Técnica:**
 
@@ -904,28 +904,28 @@ La sesión será grabada y compartida con TAVOLO para referencia futura.
 
 **Exención de Responsabilidad:**
 
-CyberChain no será responsable por daños causados en ambientes de producción (fuera de alcance autorizado), pérdida de datos en staging/dev si es resultado de pruebas autorizadas, indisponibilidad temporal de servicios staging durante explotaciones aprobadas, falsos positivos en scanners automatizados (se validarán manualmente), ni vulnerabilidades no detectadas (pentesting no garantiza 100% de cobertura).
+PentGuin no será responsable por daños causados en ambientes de producción (fuera de alcance autorizado), pérdida de datos en staging/dev si es resultado de pruebas autorizadas, indisponibilidad temporal de servicios staging durante explotaciones aprobadas, falsos positivos en scanners automatizados (se validarán manualmente), ni vulnerabilidades no detectadas (pentesting no garantiza 100% de cobertura).
 
 TAVOLO no será responsable por cambios en infraestructura no notificados que invaliden pruebas, falta de disponibilidad de contacto técnico fuera de horario laboral, ni vulnerabilidades introducidas después de finalizado el proyecto.
 
 **Limitación de Responsabilidad:**
 
-CyberChain puede causar indisponibilidad temporal (menor a 30 minutos) en staging si es resultado directo de una prueba autorizada, siempre que se notifique inmediatamente al CTO, se colabore en la restauración del servicio, y se documente el incidente en el informe.
+PentGuin puede causar indisponibilidad temporal (menor a 30 minutos) en staging si es resultado directo de una prueba autorizada, siempre que se notifique inmediatamente al CTO, se colabore en la restauración del servicio, y se documente el incidente en el informe.
 
 Cualquier impacto en producción resulta en descalificación del proyecto. Está prohibida la exfiltración masiva de datos (mayor a 10 registros sin aprobación) y la eliminación permanente de datos.
 
 **Propiedad Intelectual:**
 
-TAVOLO es propietario de toda la información sobre vulnerabilidades identificadas en sus sistemas. CyberChain retiene derechos sobre metodología, scripts propios y know-how técnico. CyberChain puede usar resultados anonimizados para fines educativos con permiso escrito de TAVOLO.
+TAVOLO es propietario de toda la información sobre vulnerabilidades identificadas en sus sistemas. PentGuin retiene derechos sobre metodología, scripts propios y know-how técnico. PentGuin puede usar resultados anonimizados para fines educativos con permiso escrito de TAVOLO.
 
-CyberChain no adquiere derechos sobre código fuente de TAVOLO. Cualquier código fuente obtenido será eliminado tras entrega del informe.
+PentGuin no adquiere derechos sobre código fuente de TAVOLO. Cualquier código fuente obtenido será eliminado tras entrega del informe.
 
 **Jurisdicción y Ley Aplicable:**
 
 Ley Aplicable: Legislación de la República del Perú  
 Jurisdicción: Tribunales de Lima, Perú
 
-Resolución de Conflictos: Negociación directa entre CTO de TAVOLO y Scrum Master de CyberChain, mediación académica por Profesor del curso (Vera Olivera, David Carlos), y escalamiento universitario a Coordinación de carrera de Ingeniería de Software UPC.
+Resolución de Conflictos: Negociación directa entre CTO de TAVOLO y Scrum Master de PentGuin, mediación académica por Profesor del curso (Vera Olivera, David Carlos), y escalamiento universitario a Coordinación de carrera de Ingeniería de Software UPC.
 
 ### 12. VIGENCIA Y MODIFICACIONES
 
@@ -952,7 +952,7 @@ Firma: _______________________________________
 Fecha: ______ de _____________ de 2024  
 Sello de la Empresa:
 
-**POR CYBERCHAIN CYBERSECURITY CONSULTING**  
+**POR PentGuin CYBERSECURITY CONSULTING**
 (Consultora - Proveedor del Servicio)
 
 Nombre: Pescoran Angulo, Juan Fabritzzio  
@@ -965,18 +965,18 @@ Institución: Universidad Peruana de Ciencias Aplicadas (UPC)
 
 | Organización | Rol | Nombre | Email | Disponibilidad |
 |--------------|-----|--------|-------|----------------|
-| **TAVOLO** | CTO (Contacto Principal) | Aldo Alberto Baldeon Fabian | aldo.baldeon@tavolo.pe | Lun-Vie 9AM-6PM |
-| **TAVOLO** | Tech Lead (Contacto Secundario) | Jimena Tamara Cama Salvatierra | jimena.cama@tavolo.pe | Lun-Vie 9AM-6PM |
-| **TAVOLO** | DevOps (Emergencias Infraestructura) | Jair Alexander Castillo Castillo | jair.castillo@tavolo.pe | 24/7 (solo críticos) |
-| **CyberChain** | Scrum Master | Juan Fabritzzio Pescoran Angulo | u20221c936@upc.edu.pe | Lun-Sab 8AM-10PM |
-| **CyberChain** | Product Owner | Diego Ulises Soto Quispe | u202214477@upc.edu.pe | Lun-Vie 9AM-9PM |
-| **UPC** | Profesor Supervisor | Vera Olivera, David Carlos | david.vera@upc.edu.pe | Horario de clases |
+| **TAVOLO**   | CTO (Contacto Principal) | Aldo Alberto Baldeon Fabian | aldo.baldeon@tavolo.pe | Lun-Vie 9AM-6PM |
+| **TAVOLO**   | Tech Lead (Contacto Secundario) | Jimena Tamara Cama Salvatierra | jimena.cama@tavolo.pe | Lun-Vie 9AM-6PM |
+| **TAVOLO**   | DevOps (Emergencias Infraestructura) | Jair Alexander Castillo Castillo | jair.castillo@tavolo.pe | 24/7 (solo críticos) |
+| **PentGuin** | Scrum Master | Juan Fabritzzio Pescoran Angulo | u20221c936@upc.edu.pe | Lun-Sab 8AM-10PM |
+| **PentGuin** | Product Owner | Diego Ulises Soto Quispe | u202214477@upc.edu.pe | Lun-Vie 9AM-9PM |
+| **UPC**      | Profesor Supervisor | Vera Olivera, David Carlos | david.vera@upc.edu.pe | Horario de clases |
 
 ### 15. CONTROL DE VERSIONES DEL DOCUMENTO
 
-| Versión | Fecha | Cambios Realizados | Autor | Aprobado por |
-|---------|-------|-------------------|-------|--------------|
-| 1.0 | 25-Ago-2024 | Versión inicial - Firma de RoE | Juan Pescoran (CyberChain) | Barbara Quezada (TAVOLO) |
+| Versión | Fecha | Cambios Realizados | Autor                    | Aprobado por |
+|---------|-------|-------------------|--------------------------|--------------|
+| 1.0 | 25-Ago-2024 | Versión inicial - Firma de RoE | Juan Pescoran (PentGuin) | Barbara Quezada (TAVOLO) |
 
 
 ### 1.5. Segmentos objetivo
@@ -1058,4 +1058,5 @@ Define quiénes se benefician de la solución: directivos (con un informe ejecut
 - Resumen ejecutivo de hallazgos y remediaciones
 - Comparativa con benchmarks de la industria
 - Plan de seguridad a 12-24 meses
+
 
