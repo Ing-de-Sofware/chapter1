@@ -79,6 +79,12 @@ La coordinación del proyecto se realizó mediante un repositorio en GitHub (doc
 
 Las evidencias están descritas y referenciadas tanto en el cuerpo del informe como en los anexos; se recomienda mantener un manifiesto de evidencias (`evidence_manifest.csv`) con mapeo nombre–archivo, autor, fecha y hash para facilitar auditoría y trazabilidad.
 
+![img1.jpeg](assets/img1.jpeg)
+
+![img2.jpeg](assets/img2.jpeg)
+
+![img3.jpeg](assets/img3.jpeg)
+
 ## **TP (Resumen de avance)**
 
 - Mejora de alcance con el cliente (dominios, subdominios, APIs, sistemas en ambiente de pruebas).
@@ -128,8 +134,6 @@ Criterio: La capacidad de aplicar el diseño de ingeniería para producir soluci
 |---|---|---|
 | Diseña soluciones en ingeniería de software (productos, procesos y/o servicios) que satisfagan necesidades específicas considerando el impacto en salud pública, seguridad, bienestar, así como factores globales, culturales, sociales, ambientales y económicos. | **TP**<br>• Pescoran Angulo, Juan Fabritzzio: definición del alcance autorizado (dominios, sistemas, APIs) y elaboración de la matriz inicial de riesgos.<br>• Curi Marcelo, Angelo Marcio: desarrollo del backlog de seguridad, Definition of Done y mapeo objetivo–entregable.<br>• Gamio Upiachihua, Brenda Lucía: identificación de necesidades del negocio, restricciones legales y lineamientos de tratamiento de datos.<br>• Baldeon Fabian, Aldo Alberto: actividades de OSINT y reconocimiento (Nmap, Masscan); consolidación de la superficie de ataque.<br>• Soto Quispe, Diego Ulises: elaboración de PoC controladas y establecimiento de pautas éticas y de confidencialidad. | El equipo diseñó y ejecutó soluciones de pentesting coherentes con los riesgos identificados; las decisiones de priorización y las medidas propuestas consideraron el impacto en salud, seguridad y continuidad operativa, y están sustentadas por evidencia verificable. |
 | Valida que el diseño de la solución de software considere aspectos en salud pública, seguridad, bienestar, así como factores globales, culturales, sociales, ambientales y económicos. | **TP**<br>• Pescoran Angulo, Juan Fabritzzio: establecimiento de reglas de compromiso (sin DoS, ventanas de prueba) y control de impacto en disponibilidad.<br>• Curi Marcelo, Angelo Marcio: definición de métricas de validación y criterios reproducibles de aceptación.<br>• Gamio Upiachihua, Brenda Lucía: creación de checklist de cumplimiento y buenas prácticas de manejo de datos.<br>• Baldeon Fabian, Aldo Alberto: verificación no intrusiva de hallazgos y documentación de falsos positivos.<br>• Soto Quispe, Diego Ulises: trazabilidad y resguardo de evidencias con registros y hashes. | Las actividades de validación incorporaron criterios técnicos y de gobernanza; la evidencia recopilada (logs, capturas y manifiesto) permite auditar hallazgos y verificar la eficacia de las medidas de mitigación. |
-
-
 
 # Capítulo I: Introducción
 
@@ -277,7 +281,7 @@ Ser reconocidos en el ecosistema de ciberseguridad de América Latina como una c
 | Campo | Información |
 |-------|-------------|
 | **Nombre de alumno** | Diego Ulises Soto Quispe |
-| **Foto** | ![Foto de Diego](ruta/foto-diego.jpg) |
+| **Foto** | <img src="../assets/diego3.png" alt="Foto de Diego" width="160" height="200"> |
 | **Código de estudiante** | U202214477 |
 | **Carrera** | Ingeniería de Software |
 | **Rol Scrum** | Product Owner |
@@ -303,7 +307,7 @@ Ser reconocidos en el ecosistema de ciberseguridad de América Latina como una c
 | Campo | Información |
 |-------|-------------|
 | **Nombre de alumno** | Brenda Lucía Gamio Upiachihua |
-| **Foto** | ![Foto de Brenda](ruta/foto-brenda.jpg) |
+| **Foto** | <img src="../assets/foto-brenda.jpg" alt="Foto de Brenda" width="160" height="200"> |
 | **Código de estudiante** | U202102344 |
 | **Carrera** | Ingeniería de Software |
 | **Rol Scrum** | Pentester de APIs / Especialista en Backend |
@@ -316,7 +320,7 @@ Ser reconocidos en el ecosistema de ciberseguridad de América Latina como una c
 | Campo | Información |
 |-------|-------------|
 | **Nombre de alumno** | Angelo Marcio Curi Marcelo |
-| **Foto** | <img src="https://raw.githubusercontent.com/FullStack-Fury/final-report/main/assets/Angelo.png" alt="Foto profesional de Angelo" width="200" height="200"> |
+| **Foto** | <img src="https://raw.githubusercontent.com/FullStack-Fury/final-report/main/assets/Angelo.png"  width="160" height="200"> |
 | **Código de estudiante** | U202022387 |
 | **Carrera** | Ingeniería de Software |
 | **Rol Scrum** | Documentador / Analista de Seguridad |
@@ -461,10 +465,10 @@ El ecosistema de TAVOLO combina múltiples superficies de ataque (landing + port
 #### **Where (¿Dónde están las vulnerabilidades esperadas?)**
 
 **Perímetro Externo (Accesible desde Internet):**
-- Landing Page de TAVOLO (https://tavolo.pe)
-- Portal Web del Comensal (https://app.tavolo.pe)
-- API Gateway público (https://api.tavolo.pe)
-- Panel Administrativo Web (https://admin.tavolo.pe)
+- Landing Page de TAVOLO
+- Portal Web del Comensal
+- API Gateway público
+- Panel Administrativo Web
 
 **Zona DMZ (Cloud - Azure):**
 - API REST Backend
@@ -1541,6 +1545,8 @@ Curso: **1ASI0665 - Anti-Hacking y Nuevas Tendencias de Seguridad**
 
 **FIN DEL DOCUMENTO DE RULES OF ENGAGEMENT**
 
+
+Para acceder al documento/contrato en el siguiente enlace: https://docs.google.com/document/d/1RuyBJEHkmCswHTg1FNIY5X7QQMIeGFZI3V9kIYmolRw/edit?usp=sharing
 
 ## 1.5. Segmentos Objetivo
 
@@ -3190,15 +3196,18 @@ La fuga masiva de archivos de backup y certificados clasifica este servidor con 
 
 ## **4.1 Matriz de Vulnerabilidades**
 
-| ID | Vulnerabilidad Identificada | Descripción Técnica | CVSS v3.1 | Impacto | Prioridad |
-|----|-----------------------------|----------------------|------------|----------|------------|
-| **VULN‑001** | Falta de cabecera **Strict‑Transport‑Security (HSTS)** | El servidor HTTPS no implementa la cabecera HSTS, permitiendo ataques de downgrade y SSL Stripping. | 6.5 (Medium) | Compromete la confidencialidad y permite ataques Man‑in‑the‑Middle (MitM). | Alta |
-| **VULN‑002** | Ausencia de cabecera **X‑Frame‑Options** | No se restringe la carga del sitio en <iframe>, permitiendo **Clickjacking**. | 5.0 (Medium) | Puede llevar a acciones fraudulentas sobre usuarios legítimos. | Media |
-| **VULN‑003** | Falta de cabecera **X‑Content‑Type‑Options** | Permite *MIME sniffing*, posible ejecución de contenido no intencionado como JavaScript. | 4.3 (Low) | Riesgo moderado de inyección de código. | Media |
-| **VULN‑004** | Fuga de archivos de **backup y certificados (.pem, .jks, .tgz)** | Nikto detectó exposición de archivos sensibles en el servidor, incluyendo claves privadas y bases de datos. | 9.8 (Critical) | Compromiso total de la confidencialidad y autenticidad del sistema. | Crítica |
-| **VULN‑005** | **Información de servidor expuesta** en cabecera HTTP (Server: nginx/1.24.0 Ubuntu) | Divulga versión y SO, facilitando fingerprinting para ataques dirigidos. | 3.7 (Low) | Aumenta la probabilidad de explotación selectiva de CVE. | Baja |
-| **VULN‑006** | **Error 502 en /API y /APIS** (Reverse Proxy) | El backend de la API no responde correctamente, indicando mala configuración de proxy o restricción de acceso. | 6.0 (Medium) | Interrupción del servicio y posible filtrado inadecuado de solicitudes. | Media |
+A continuación, se presenta una matriz consolidada de las vulnerabilidades identificadas durante el Sprint 2, basada en los resultados de las herramientas Nessus, Gobuster y Nikto. La matriz incluye solo hallazgos confirmados y relevantes, clasificados por severidad (utilizando CVSS v3.0 donde aplica, o categorización cualitativa). Se priorizan los impactos críticos como la fuga de información, y se incluyen recomendaciones de mitigación. Los hallazgos se agrupan por categoría para evitar duplicados (ej: cabeceras de seguridad confirmadas por múltiples herramientas).
 
+| Vulnerabilidad                                                               | Severidad (CVSS v3.0) | Categoría/Familia                       | Descripción                                                                                                                                                                                                                                                                                             | Herramienta que la Detectó                | Posible Impacto                                                                                                                     | Recomendación de Mitigación                                                                                                                                                                                               |
+| ---------------------------------------------------------------------------- | --------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Fuga de Información Crítica (Archivos de Backup y Certificados Expuestos)    | CRÍTICO (9.8)         | Exposición de Datos Sensibles (CWE-530) | Exposición masiva de archivos sensibles como certificados (.pem, .jks), backups (.tgz, .tar, .war) y definiciones de datos (.html). Ejemplos: /tavolo.pem, /database.tgz, /tavolo.eastus2.cloudapp.jks, /site.tar.lzma. Permite acceso no autorizado a claves privadas, código fuente y datos internos. | Nikto                                     | Compromiso total del sistema: descifrado de tráfico TLS, suplantación de identidad, exposición de credenciales y lógica de negocio. | Implementar controles de acceso estrictos en el servidor web (ej: .htaccess o reglas de Nginx para denegar acceso a archivos sensibles). Eliminar o mover archivos expuestos. Usar WAF para bloquear patrones de fuzzing. |
+| Ausencia de Cabecera Strict-Transport-Security (HSTS)                        | MEDIUM (6.5)          | Web Servers                             | El servidor no fuerza el uso exclusivo de HTTPS, permitiendo ataques de degradación de protocolo (SSL Stripping). Confirmado en respuestas HTTP/HTTPS.                                                                                                                                                  | Nessus, Nikto                             | Secuestro de sesiones, intercepción de datos sensibles mediante downgrade a HTTP.                                                   | Agregar la cabecera `Strict-Transport-Security: max-age=31536000; includeSubDomains` en la configuración de Nginx para forzar HTTPS.                                                                                      |
+| Ausencia o Permisiva Cabecera X-Frame-Options                                | INFO (4.3)            | CGI Abuses / Web Servers                | No se define la cabecera, permitiendo que el sitio sea incrustado en iframes maliciosos.                                                                                                                                                                                                                | Nessus, Nikto                             | Ataques de Clickjacking: manipulación de clics del usuario en contextos superpuestos.                                               | Configurar `X-Frame-Options: DENY` o `SAMEORIGIN` en las respuestas HTTP de Nginx.                                                                                                                                        |
+| Ausencia o Permisiva Directiva Content-Security-Policy (CSP) frame-ancestors | INFO (4.3)            | CGI Abuses                              | La directiva frame-ancestors no está configurada, similar a X-Frame-Options pero con menor granularidad.                                                                                                                                                                                                | Nessus                                    | Exposición a Clickjacking avanzado y inyecciones de contenido.                                                                      | Incluir `Content-Security-Policy: frame-ancestors 'self'` en las cabeceras, o fortalecer con políticas CSP completas.                                                                                                     |
+| Ausencia de Cabecera X-Content-Type-Options                                  | INFO (4.3)            | Web Servers                             | No se define `nosniff`, permitiendo que los navegadores interpreten MIME types erróneamente.                                                                                                                                                                                                            | Nikto                                     | Ataques de MIME Sniffing: ejecución de scripts maliciosos disfrazados como archivos inofensivos.                                    | Agregar `X-Content-Type-Options: nosniff` en la configuración del servidor.                                                                                                                                               |
+| Exposición de Tipo y Versión del Servidor HTTP                               | INFO (2.7)            | Web Servers                             | La cabecera Server revela `nginx/1.24.0 (Ubuntu)`, facilitando la búsqueda de CVEs específicos.                                                                                                                                                                                                         | Nessus, WhatWeb (de Sprint 1, confirmado) | Reconocimiento pasivo: atacantes pueden targeting vulnerabilities conocidas en Nginx 1.24.0.                                        | Suprimir la cabecera Server en Nginx con `server_tokens off;` en el archivo de configuración.                                                                                                                             |
+| Compresión HTTP Habilitada (Vulnerable a BREACH)                             | MEDIUM (5.9)          | Web Servers                             | Content-Encoding: deflate está activo, potencialmente exponiendo datos sensibles a ataques de compresión.                                                                                                                                                                                               | Nikto                                     | Extracción de secrets (ej: CSRF tokens, cookies) mediante side-channel attacks como BREACH.                                         | Deshabilitar compresión HTTP en páginas con datos sensibles, o implementar padding en respuestas para mitigar BREACH.                                                                                                     |
+| Error de Bad Gateway en Rutas de API                                         | LOW (3.7)             | Misconfiguración de Servidor            | Rutas /api y /apis devuelven 502 Bad Gateway, indicando fallo en reverse proxy o backend.                                                                                                                                                                                                               | Gobuster                                  | Denegación de servicio indirecta o exposición de misconfiguraciones; podría indicar rutas sensibles no protegidas adecuadamente.    | Revisar configuración de load balancer/reverse proxy en Azure. Asegurar que rutas de API estén protegidas con autenticación y no expuestas públicamente si no es intencional.                                             |
 
 ## **4.2 Evidencias Técnicas**
 
@@ -3268,32 +3277,145 @@ La fuga masiva de archivos de backup y certificados clasifica este servidor con 
 
 ## **4.3 Impacto en el Negocio**
 
-### **1. Fuga de Información Crítica (VULN‑004)**
-- **Impacto:** Compromiso de claves privadas, certificados y bases de datos.  
-- **Consecuencia:** Pérdida de confianza de clientes y riesgo de suplantación de identidad digital.  
-- **Efecto en el Negocio:** Daño reputacional y riesgo de sanción por incumplir normas de protección de datos.
+### **Vulnerabilidad Crítica: Fuga de Información (Archivos de Backup y Certificados)**
+**Impacto Financiero Directo:**
+
+- **Multa ARPDP (Autoridad Nacional de Protección de Datos Personales):** S/ 500,000 - S/ 2,000,000
+    - Base legal: Ley N° 29733 (Protección de Datos Personales del Perú)
+    - La exposición de 10,000 registros de usuarios con datos personales constituye una brecha masiva
+    - Obligación de notificación en 72 horas a la autoridad y usuarios afectados
+
+**Impacto Operacional:**
+
+- **Compromiso total de infraestructura:** Si un atacante descarga los certificados TLS (.pem, .jks):
+    
+    - Puede descifrar TODO el tráfico histórico interceptado (si lo capturó previamente)
+    - Puede suplantar la identidad del servidor y crear sitios de phishing idénticos
+    - Duración de remediación: 2-5 días (emisión de nuevos certificados, rotación completa)
+    - Downtime estimado: 4-8 horas durante migración de certificados
+- **Exposición de lógica de negocio:** Los archivos `.tgz`, `.war` contienen:
+    
+    - Código fuente completo de la aplicación → competidores pueden copiar funcionalidades
+    - Credenciales hardcodeadas en el código (API keys, database passwords)
+    - Algoritmos propietarios de gestión de aforo y sensores IoT
+
+**Impacto Comercial (B2B):**
+
+- **Pérdida de clientes cafeterías:**
+    
+    - 15 cafeterías actuales podrían cancelar contratos por incumplimiento de seguridad
+    - Pérdida de ingresos MRR (Monthly Recurring Revenue): S/ 15,000 - S/ 30,000/mes
+    - Cláusulas de SLA de seguridad podrían activar penalizaciones contractuales
+- **Cancelación de negociaciones con cadenas corporativas:**
+    
+    - 2 cadenas de cafeterías (50+ sedes potenciales) requieren auditoría de seguridad aprobada
+    - Valor del contrato perdido: S/ 100,000 - S/ 300,000 anuales
+
+**Impacto en Inversión:**
+
+- **Ronda Serie A en riesgo ($500,000):**
+    - Inversionistas requieren due diligence de seguridad → hallazgo crítico = deal breaker
+    - Descuento de valuación: -30% a -50% si se descubre en due diligence
+    - Retraso en cierre de ronda: 3-6 meses adicionales para remediar
+
+**Impacto Reputacional:**
+
+- **Pérdida de confianza de usuarios finales (comensales):**
+    - 5,000 usuarios registrados podrían dejar de usar la plataforma
+    - NPS (Net Promoter Score) disminuye de 45 a 15 (pérdida de 30 puntos)
+    - Tiempo de recuperación de reputación: 12-18 meses
+
+
+### **Vulnerabilidad Alta: Ausencia de HSTS (SSL Stripping)**
+
+**Impacto Financiero:**
+
+- **Robo de credenciales de administradores de cafeterías:**
+    - Si un atacante intercepta sesión de admin → acceso total al panel de gestión
+    - Puede modificar disponibilidad de mesas → pérdida de reservas reales
+    - Impacto estimado: S/ 5,000 - S/ 20,000 en reservas perdidas durante el ataque
+
+**Impacto Operacional:**
+
+- **Session Hijacking en redes WiFi públicas:**
+    - Usuarios/administradores conectados en cafés/aeropuertos son vulnerables
+    - Atacante obtiene tokens JWT → acceso no autorizado durante 24-48 horas (si tokens no expiran)
+    - Tiempo de detección del ataque: 2-7 días (si no hay monitoreo proactivo)
+
+**Impacto en Cumplimiento Normativo:**
+
+- **Incumplimiento de estándares de seguridad:**
+    - OWASP ASVS Level 2 (requerido por clientes corporativos) → No cumple
+    - PCI-DSS (si TAVOLO procesa pagos directamente) → Falla en controles de cifrado
 
 
 
-### **2. Falta de Cabeceras de Seguridad (VULN‑001 – VULN‑003)**
-- **Impacto:** Riesgo de Clickjacking, SSL Stripping y MIME Sniffing.  
-- **Consecuencia:** Pérdida de integridad en las sesiones y exposición a ataques dirigidos.  
-- **Efecto en el Negocio:** Afecta la percepción de seguridad y la confianza del usuario final.
+### **Vulnerabilidad Media: Ausencia de X-Frame-Options / CSP (Clickjacking)**
+
+**Impacto en Usuarios Finales:**
+
+- **Ataque de Clickjacking en proceso de reserva:**
+    - Atacante crea página maliciosa con iframe invisible de TAVOLO
+    - Usuario cree que está cancelando una reserva, pero en realidad está:
+        - Autorizando transferencia bancaria (si hay integración futura)
+        - Compartiendo datos personales con terceros
+    - Impacto: 50-200 usuarios afectados antes de detección
+
+**Impacto Reputacional:**
+
+- **Campaña de phishing usando iframe de TAVOLO:**
+    - Atacante usa marca de TAVOLO para legitimar estafa
+    - Daño a reputación: menciones negativas en redes sociales, prensa local
+    - Costo de campaña de recuperación de imagen: S/ 10,000 - S/ 30,000
 
 
 
-### **3. Exposición de Información del Servidor (VULN‑005)**
-- **Impacto:** Facilita ataques específicos por CVE.  
-- **Consecuencia:** Incremento de riesgo en campañas de explotación selectiva.  
-- **Efecto en el Negocio:** Potencial interrupción de servicio por ataques automatizados.
+### **Vulnerabilidad Media: Compresión HTTP (BREACH Attack)**
+
+**Impacto Técnico:**
+
+- **Extracción de tokens CSRF:**
+    - Atacante puede robar tokens de sesión de administradores
+    - Acceso no autorizado a panel admin → modificación de configuraciones de sensores IoT
+    - Impacto: 3-5 cafeterías afectadas con datos de sensores manipulados
+
+**Impacto Operacional:**
+
+- **Disponibilidad falsa de mesas:**
+    - Sensores reportan ocupación incorrecta → usuarios reservan mesas "fantasma"
+    - Experiencia de usuario degradada → NPS disminuye 10-15 puntos
+    - Churn de usuarios: 5-10% de usuarios activos mensuales
 
 
+### **Vulnerabilidad Baja: Exposición de Versión de Nginx**
 
-### **4. Error de Configuración de API (VULN‑006)**
-- **Impacto:** Interrupción de servicio y limitación de funcionalidad.  
-- **Consecuencia:** Pérdida temporal de operatividad y degradación de la experiencia de usuario.  
-- **Efecto en el Negocio:** Pérdida de productividad y riesgo de inactividad del servicio.
+**Impacto en Seguridad:**
 
+- **Targeting de exploits conocidos:**
+    - Nginx 1.24.0 tiene CVEs conocidos (ej: CVE-2024-XXXX)
+    - Atacante puede automatizar exploits específicos → reducción de tiempo de compromiso de 7 días a 2 horas
+
+**Impacto Indirecto:**
+
+- **Facilita reconocimiento para ataques complejos:**
+    - Información sobre Ubuntu + Nginx 1.24.0 → atacante sabe qué exploits preparar
+    - Reduce costos del atacante (no necesita probar múltiples vectores)
+
+
+### **Vulnerabilidad Baja: Error 502 en Rutas de API**
+
+**Impacto Operacional:**
+
+- **Funcionalidad de API parcialmente no disponible:**
+    - Si `/api` está caído → usuarios no pueden crear/modificar reservas
+    - Pérdida de ingresos durante downtime: S/ 1,000 - S/ 3,000/día
+    - Tiempo promedio de restauración (MTTR): 2-6 horas
+
+**Impacto en Experiencia de Usuario:**
+
+- **Errores 502 visibles para usuarios finales:**
+    - Percepción de plataforma inestable → usuarios prueban competidores
+    - Tasa de conversión de registro disminuye 15-25%
 
 
 ## **Conclusión del Capítulo IV**
@@ -3302,5 +3424,4 @@ El análisis consolidado de los Sprints 1 y 2 evidencia que 
 
 La vulnerabilidad de fuga de información constituye el riesgo principal para la continuidad del negocio y debe priorizarse su mitigación inmediata.  
 Se recomienda implementar medidas de *hardening* en nginx, revisar las políticas de acceso a la API y establecer un ciclo de parches y monitoreo basado en OWASP Top 10 y ISO/IEC 27002.
-
 
